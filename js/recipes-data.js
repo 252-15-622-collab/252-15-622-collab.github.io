@@ -123,7 +123,7 @@ window.RECIPES = [
   { id: "cauldron", resultId: "cauldron", resultCount: 1, type: "shaped", gridSize: "3x3", pattern: ["iron_ingot",null,"iron_ingot", "iron_ingot",null,"iron_ingot", "iron_ingot","iron_ingot","iron_ingot"] },
   { id: "bucket", resultId: "bucket", resultCount: 1, type: "shaped", gridSize: "3x3", pattern: [null,null,null, "iron_ingot",null,"iron_ingot", null,"iron_ingot",null] },
   { id: "paper", resultId: "paper", resultCount: 3, type: "shaped", gridSize: "3x3", pattern: [null,null,null, "sugar_cane","sugar_cane","sugar_cane", null,null,null] },
-  { id: "book", resultId: "book", resultCount: 1, type: "shapeless", gridSize: "2x2", pattern: ["paper","paper","leather",null], description: "3 paper and 1 leather (shapeless; uses 3 paper)" },
+  { id: "book", resultId: "book", resultCount: 1, type: "shapeless", gridSize: "3x3", pattern: ["paper","paper","paper","leather",null,null,null,null,null], description: "3 paper and 1 leather (shapeless)" },
   { id: "lectern", resultId: "lectern", resultCount: 1, type: "shaped", gridSize: "3x3", pattern: ["oak_slab","oak_slab","oak_slab", null,"bookshelf",null, null,"oak_planks",null] },
   { id: "clock", resultId: "clock", resultCount: 1, type: "shaped", gridSize: "3x3", pattern: [null,"gold_ingot",null, "gold_ingot","redstone","gold_ingot", null,"gold_ingot",null] },
   { id: "compass", resultId: "compass", resultCount: 1, type: "shaped", gridSize: "3x3", pattern: [null,"iron_ingot",null, "iron_ingot","redstone","iron_ingot", null,"iron_ingot",null] },

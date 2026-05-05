@@ -312,7 +312,7 @@ function openModal(recipeId) {
       const li = document.createElement('li');
       const ingImg = imgWithFallback(getItemImageUrl(ingId), name, '');
       li.appendChild(ingImg);
-      const text = document.createTextNode(`${name}${counts[ingId] > 1 ? ' ×' + counts[ingId] : ''}`);
+      const text = document.createTextNode(`${name}${counts[ingId] > 1 ? ` ×${counts[ingId]}` : ''}`);
       li.appendChild(text);
       ingredientUl.appendChild(li);
     });

@@ -34,7 +34,7 @@ self.addEventListener('fetch', event => {
           return fetch(event.request).then(response => {
             if (response.ok) cache.put(event.request, response.clone());
             return response;
-          }).catch(() => cached || new Response('', { status: 404 }));
+          }).catch(() => new Response('', { status: 404, statusText: 'Not Found' }));
         })
       )
     );

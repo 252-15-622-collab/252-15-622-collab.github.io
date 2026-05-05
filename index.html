@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Complete Minecraft crafting recipe book with search and offline support" />
+  <meta name="theme-color" content="#1a1a1a" />
+  <title>Minecraft Recipe Book</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="offline-banner" role="alert" aria-live="polite">
+    ⚠ You are offline. Showing cached content.
+  </div>
+
+  <header>
+    <h1>📖 Minecraft Recipe Book</h1>
+    <p class="subtitle">Search and browse all crafting recipes</p>
+  </header>
+
+  <main>
+    <div class="search-container">
+      <input
+        id="search-input"
+        type="text"
+        placeholder="Search items and recipes..."
+        aria-label="Search items and recipes"
+        autocomplete="off"
+        spellcheck="false"
+      />
+    </div>
+
+    <div class="filter-bar" role="group" aria-label="Filter recipes">
+      <button class="filter-btn active" data-filter="all">All Recipes</button>
+      <button class="filter-btn" data-filter="3x3">Crafting Table</button>
+      <button class="filter-btn" data-filter="2x2">Hand-Crafted (2×2)</button>
+    </div>
+
+    <div id="stats-bar" aria-live="polite">
+      <span id="stats-text">Loading...</span>
+    </div>
+
+    <div id="recipe-grid" role="list" aria-label="Recipe cards"></div>
+  </main>
+
+  <div id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-overlay" aria-hidden="true"></div>
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">✕</button>
+      <h2 id="modal-title"></h2>
+
+      <div class="modal-body">
+        <div class="crafting-container">
+          <!-- Populated by JS -->
+        </div>
+
+        <div class="modal-description" style="display:none"></div>
+
+        <div class="ingredient-list">
+          <h3>Ingredients</h3>
+          <ul id="ingredient-ul"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/items-data.js"></script>
+  <script src="js/recipes-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

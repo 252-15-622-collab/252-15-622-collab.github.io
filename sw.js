@@ -1,4 +1,5 @@
 const CACHE_NAME = 'minecraft-recipe-book-v1';
+const CDN_HOSTNAME = 'raw.githubusercontent.com';
 const PRECACHE_URLS = [
   '/',
   '/index.html',
@@ -26,7 +27,7 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
 
-  if (url.hostname === 'raw.githubusercontent.com') {
+  if (url.hostname === CDN_HOSTNAME) {
     event.respondWith(
       caches.open(CACHE_NAME).then(cache =>
         cache.match(event.request).then(cached => {

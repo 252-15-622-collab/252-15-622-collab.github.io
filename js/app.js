@@ -211,7 +211,7 @@ function setupModal() {
 
 function trapFocus(e) {
   if (e.key !== 'Tab') return;
-  const focusable = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+  const focusable = modal.querySelectorAll('button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])');
   const first = focusable[0];
   const last = focusable[focusable.length - 1];
   if (e.shiftKey) {

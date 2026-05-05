@@ -7,6 +7,8 @@
   "background_color": "#1a1a1a",
   "theme_color": "#3c8527",
   "icons": [
-    { "src": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21/assets/minecraft/textures/item/book.png", "sizes": "32x32", "type": "image/png" }
+    { "src": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21/assets/minecraft/textures/item/book.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21/assets/minecraft/textures/item/book.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21/assets/minecraft/textures/item/book.png", "sizes": "512x512", "type": "image/png" }
   ]
 }

@@ -65,7 +65,7 @@ window.RECIPES = [
   { id: "furnace", resultId: "furnace", resultCount: 1, type: "shaped", gridSize: "3x3", pattern: ["cobblestone","cobblestone","cobblestone", "cobblestone",null,"cobblestone", "cobblestone","cobblestone","cobblestone"] },
   { id: "chest", resultId: "chest", resultCount: 1, type: "shaped", gridSize: "3x3", pattern: ["oak_planks","oak_planks","oak_planks", "oak_planks",null,"oak_planks", "oak_planks","oak_planks","oak_planks"] },
   { id: "stone_bricks", resultId: "stone_bricks", resultCount: 4, type: "shaped", gridSize: "2x2", pattern: ["stone","stone","stone","stone"] },
-  { id: "sandstone", resultId: "sandstone", resultCount: 1, type: "shaped", gridSize: "2x2", pattern: ["sand","sand","sand","sand"], description: "Craft 4 sand blocks into sandstone" },
+  { id: "sandstone", resultId: "sandstone", resultCount: 1, type: "shaped", gridSize: "2x2", pattern: ["sand","sand","sand","sand"], description: "Combine 4 sand blocks to craft 1 sandstone" },
   { id: "quartz_block", resultId: "quartz_block", resultCount: 1, type: "shaped", gridSize: "2x2", pattern: ["quartz","quartz","quartz","quartz"], description: "Craft 4 nether quartz into a block" },
   { id: "polished_granite", resultId: "polished_granite", resultCount: 4, type: "shaped", gridSize: "2x2", pattern: ["granite","granite","granite","granite"] },
   { id: "polished_diorite", resultId: "polished_diorite", resultCount: 4, type: "shaped", gridSize: "2x2", pattern: ["diorite","diorite","diorite","diorite"] },

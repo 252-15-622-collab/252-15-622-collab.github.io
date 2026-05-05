@@ -35,7 +35,10 @@ self.addEventListener('fetch', event => {
           return fetch(event.request).then(response => {
             if (response.ok) cache.put(event.request, response.clone());
             return response;
-          }).catch(() => new Response('', { status: 404, statusText: 'Not Found' }));
+          }).catch(err => {
+            console.warn('[SW] CDN fetch failed:', event.request.url, err);
+            return new Response('', { status: 404, statusText: 'Not Found' });
+          });
         })
       )
     );
